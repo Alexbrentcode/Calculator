@@ -11,9 +11,10 @@ import deskbg from '../assets/deskbg.jpg'
 
 
 const Calculator = () => {
-    const digitsArr = [...Array(10).keys()]
-    digitsArr.shift()
-    digitsArr.push(0)
+    // const digitsArr = [...Array(10).keys()]
+    // digitsArr.shift()
+    // digitsArr.push(0)
+    const digitsArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     const operatorArr = ["+", "-", "*", "/"];
     const [result, setResult] = useState("");
     const [input, setInput] = useState("");
@@ -138,15 +139,10 @@ const Calculator = () => {
                 {digitsArr.map((idx) => 
             
                     <DigitButton
-                
                     className={idx}
                     idx={idx}
                     key={idx} 
                     digit={idx}
-
-
-
-            
                     handleClick={handleDigitButtonClick}
                     />
                 )}
