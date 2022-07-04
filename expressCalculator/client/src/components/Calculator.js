@@ -14,7 +14,7 @@ const Calculator = () => {
     // const digitsArr = [...Array(10).keys()]
     // digitsArr.shift()
     // digitsArr.push(0)
-    const digitsArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const digitsArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
     const operatorArr = ["+", "-", "*", "/"];
     const [result, setResult] = useState("");
     const [input, setInput] = useState("");
